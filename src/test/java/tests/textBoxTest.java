@@ -20,7 +20,8 @@ public class textBoxTest {
         //Email
         $("#userEmail").val("Alek@mail.ru");
         //Gender
-        $("[class='custom-control-label']").click();
+        //$("[class='custom-control-label']").click(); - bad alternative
+        $("#genterWrapper").$(byText("Male")).click();
         //Number
         $("#userNumber").val("9999999999");
         //Date
@@ -61,6 +62,6 @@ public class textBoxTest {
         $x("//td[text()='Picture']").parent().shouldHave(text("1.jpg"));
         $x("//td[text()='Address']").parent().shouldHave(text("LA, WallStreet 233/42"));
         $x("//td[text()='State and City']").parent().shouldHave(text("Haryana Karnal"));
-        System.out.println();
+
     }
 }
