@@ -35,8 +35,5 @@ target
 .project
 .settingsorg.eclipse.buildship.core.prefs
 .vscode
-#gradlew
-#gradlew.bat
 .todo
 local.properties
-#build.gradle
